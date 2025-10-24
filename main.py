@@ -4,7 +4,7 @@ gi.require_version("Gtk", "3.0")
 
 from gi.repository import Gtk as gtk, AppIndicator3 as appindicator
 def main():
-  indicator = appindicator.Indicator.new("customtray", YourIcon.svg, appindicator.IndicatorCategory.APPLICATION_STATUS)
+  indicator = appindicator.Indicator.new("customtray", Path/To/Your/Icon.svg, appindicator.IndicatorCategory.APPLICATION_STATUS)
   indicator.set_status(appindicator.IndicatorStatus.ACTIVE)
   indicator.set_menu(menu())
   gtk.main()
